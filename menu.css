@@ -1,0 +1,456 @@
+/*Definições para o corpo da página inteira*/
+*  {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+    
+/*COMEÇO DO CSS DA BARRA DE NAVEGAÇÃO*/
+.navbar{
+    width: 100%;
+    height: 100px;
+     background-image: linear-gradient(25deg, white, white, white, rgb(17, 186, 17),green);
+
+    display: flex;
+    position: fixed;
+    top: 0; /*O "top" e "left" foi oque fez a navbar bar ficar fixada no body e não na div*/
+    left: 0;
+    z-index: 100px;
+    
+}
+
+#nav
+{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    
+}
+
+
+.links{
+    
+    height: 100px;
+    width: 200px;
+    
+    position: relative;
+    flex: 50%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 60px;
+    padding-right: 45px;
+   
+    
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    
+    padding: 3px 15px ;
+    border-radius: 3px;
+    
+
+    
+    
+}
+
+.links a:hover{
+    border-radius: 4px;
+    
+    background-color: #4bd44b;
+
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+
+    transition: background 0.1s;
+    transition: border 0.1s;
+    
+    
+
+}
+
+#Bot_Sobre{
+    padding: 10px 30px ;
+    font-size: 20px; 
+    
+}
+
+#Bot_Sobre:hover{
+    background-color: #4bd44b;
+
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    
+    transition: background 0.1s;
+    transition: border 0.1s;
+    
+}
+
+
+img{
+    width: 100px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+/*TERMNO DO CSS DA BARRA DE NAVEGAÇÃO*/
+
+/*COMEÇO DO CSS DA PRIMEIRA PARTE DA PAGINA PRINCIPAL (VISUALIZAÇÃO PRIMARIA)*/
+
+.Pag1{
+    max-width: auto;
+    height: 543px;
+    position: relative;
+    
+
+    background-image: url(./img/enfer3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top ;
+    
+    
+
+    text-align: center;
+    justify-content: center;
+    color: black;
+    border-bottom: 3px solid black;
+    border-top: 2px solid black;
+    margin-top: 100px;
+    
+    
+}
+
+.title{
+    margin-top: 140px;
+}
+
+/*TERMINO DO CSS DA PRIMEIRA PARTE DA PAGINA PRINCIPAL (VISUALIZAÇAO PRIMARIA) */
+
+#Introdução{
+    max-width: 100%;
+    height:500px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+.introdução{
+    height: 300px;
+    width: 900px;
+
+    border: 5px solid #4bd44b;
+    border-radius:10px ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    box-shadow: 5px 5px 1px  #299e29;    
+}
+
+#Titulo_Introdução{
+    max-width: 100%; border-bottom:3px solid green;
+    height: 60px;
+
+    background-image: linear-gradient(25deg, white, white,  green, green, green, white, white );
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family:'Kanit', sans-serif ;
+    font-size: 20px;
+
+    color: whitesmoke;
+    padding-left: 50px;
+}
+
+/*COMEÇO DO CSS DA TERCEIRA PARTE DA PAGINA PRINCIPAL (COLETA MÓVEL) */
+
+.Pag2{
+    
+    height: 600px;
+    width: auto;
+    background-color: white;
+    border-bottom: 3px solid black;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    font-size: 20px;
+        
+}
+
+#Titulo_Pag2{
+    max-width: 100%; border-bottom:3px solid green;
+    height: 60px;
+
+    background-image: linear-gradient(25deg, white, white,  green, green, green, white, white );
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family:'Kanit', sans-serif ;
+    font-size: 20px;
+
+    color: whitesmoke;
+    padding-left: 50px;
+    border-top: 3px solid black;
+    
+}
+
+
+#Escrita_Pag2{
+    
+    font-family:  'Kanit', sans-serif;
+    
+    border: 5px solid #4bd44b;
+    border-radius: 10px;
+    padding: 25px 60px;
+
+    box-shadow: 5px 5px 1px  #299e29;
+    
+}
+
+.Bot_Pag2{
+    text-decoration: none;
+    padding: 4px 12px;
+    background-color: #4bd44b;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+#Escrita_Pag2 .Bot_Pag2:hover{
+    background-color: #299e29;
+
+    transition: background 0.4s;
+}
+
+#Img_Pag2{
+    
+    width: 400px;
+    height: 424px;
+    background-image: url(./img/furgao_ruim.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*TERMINO DO CSS DA TERCEIRA PARTE DA PAGINA PRINCIPAL (COLETA MÓVEL)  */
+
+/*COMEÇO DO CSS DA QUARTA PARTE DA PAGINA PRINCIPAL (EXAMES) */
+
+#Pag3{
+    max-width: 100%;
+    height: 700px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Titulo_Pag3{
+    max-width: 100%; border-bottom:3px solid green;
+    height: 60px;
+    background-image: linear-gradient(25deg, white, white,  green, green, green, white, white );
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 50px;
+    font-family:'Kanit', sans-serif ;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#Exames{
+    width: 950px;
+    height: 630px;
+
+    border: 5px solid #4bd44b;
+    border-radius: 10px;
+}
+
+.Titulo_exames{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+
+    padding-left: 40px;
+    padding-top: 20px;
+    height: 60px;
+    max-width: 100%;
+    
+}
+
+#exames{
+    padding-top:10px ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 80px;
+}
+
+.lista1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    font-size: 20px;
+    font-family:  'Kanit', sans-serif ;
+
+    width: 850px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+.lista2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    font-size: 20px;
+    font-family:  'Kanit', sans-serif ;
+
+    width: 850px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+.lista3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    font-size: 20px;
+    font-family:  'Kanit', sans-serif ;
+
+    width: 850px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+.lista4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    font-size: 20px;
+    font-family:  'Kanit', sans-serif ;
+
+    width: 850px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+.lista1 a:hover{
+    border-bottom: 3px solid green;
+
+    transition: border 0.1s;
+}
+
+.lista2 a:hover{
+    border-bottom: 3px solid green;
+
+    transition: border 0.1s;
+}
+
+.lista3 a:hover{
+    border-bottom: 3px solid green;
+
+    transition: border 0.1s;
+}
+
+.lista4 a:hover{
+    border-bottom: 3px solid green;
+
+    transition: border 0.1s;
+}
+
+/*TERMINO DO CSS DA QUARTA PARTE DA PAGINA PRINCIPAL (EXAMES) */
+
+/*COMEÇO DO CSS DA QUINTA PARTE DA PAGINA PRINCIPAL (RODAPÉ) */
+
+#Rodapé{
+    max-width: 100%;
+    height: 400px;
+    background-color: white; 
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#Bloco1{
+    width: 230px;
+    height: 320px;
+    border-top: 4px solid green;
+}
+
+#Bloco2{
+    width: 550px;
+    height: 320px;
+    border-top: 4px solid green;
+    
+}
+
+#Bloco3{
+    width: 400px;
+    height: 320px;
+    border-top: 4px solid green;
+    
+}
+
+/*TERMINO DO CSS DA QUINTA PARTE DA PAGINA PRINCIPAL (RODAPÉ) */
+
+/*COMEÇO DO CSS DA SEXTA PARTE DA PAGINA PRINCIPAL (RODAPÉ 2 ) */
+
+#Rodape2{
+    max-width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family:  'Kanit', sans-serif;
+    background-color: #299e29;
+}
+
+
+/*TERMINO DO CSS DA SEXTA PARTE DA PAGINA PRINCIPAL (RODAPÉ 2) */
+
+
+
+
+
+
+
+
+
+
