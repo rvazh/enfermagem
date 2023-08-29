@@ -173,6 +173,7 @@ img{
     align-items: center;
     justify-content: start;
     padding-left: 20px;
+    flex-direction: column;
 
     font-family: 'Kanit', sans-serif;
     font-size: 18px;
